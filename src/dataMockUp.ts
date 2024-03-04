@@ -22,32 +22,32 @@ export const devices: Device[] = [
   },
   {
     status: false,
-    switch: "switch 2.1",
+    switch: "Switch 2.1",
     location: "Garage",
   },
   {
     status: true,
-    switch: "switch 2.2",
+    switch: "Switch 2.2",
     location: "Front Door",
   },
   {
     status: true,
-    switch: "switch 2.3",
+    switch: "Switch 2.3",
     location: "Back Door",
   },
   {
     status: false,
-    switch: "switch 3.1",
+    switch: "Switch 3.1",
     location: "Backyard",
   },
   {
     status: true,
-    switch: "switch 3.2",
+    switch: "Switch 3.2",
     location: "Left Alley",
   },
   {
     status: true,
-    switch: "switch 3.3",
+    switch: "Switch 3.3",
     location: "Storage Room",
   },
 ];

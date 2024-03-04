@@ -16,13 +16,13 @@ const Card: React.FC<CardProps> = ({ status, switch: switchName, location }) => 
 
   return (
     <View style={styles.container}>
-      <View style={styles.content}>
-        <View style={styles.bulbStatus}>
-          <Image source={iconSource} style={styles.icon} />
-          <Text style={styles.statusText}>{statusText}</Text>
-        </View>
-        <Text style={styles.text}>{switchName}</Text>
-        <Text style={styles.text}>{location}</Text>
+      <View style={styles.bulbStatus}>
+        <Image source={iconSource} style={styles.icon} />
+        <Text style={styles.statusText}>{statusText}</Text>
+      </View>
+      <View style={styles.switchAndLocation}>
+        <Text style={styles.switchText}>{switchName}</Text>
+        <Text numberOfLines={1} style={styles.locationText}>{location}</Text>
       </View>
     </View>
   );
@@ -35,31 +35,36 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     backgroundColor: 'gray',
     padding: 10,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  content: {
-    flex: 1,
     justifyContent: 'space-between',
     alignItems: 'center',
   },
   bulbStatus: {
     flexDirection: 'row',
+    justifyContent: 'space-between',
     alignItems: 'center',
-  },
-  text: {
-    color: 'white',
-    fontSize: 14,
+    width: '100%',
   },
   icon: {
-    width: 20,
-    height: 20,
-    marginRight: 5,
+    width: 35,
+    height: 35,
   },
   statusText: {
     color: 'white',
     fontSize: 14,
-    fontWeight: 'bold',
+    marginBottom: 20,
+  },
+  switchAndLocation: {
+    width: '100%',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+  },
+  switchText: {
+    color: 'white',
+    fontSize: 12,
+  },
+  locationText: {
+    color: 'white',
+    fontSize: 12,
   },
 });
 

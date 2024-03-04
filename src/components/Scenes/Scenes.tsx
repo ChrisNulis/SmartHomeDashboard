@@ -23,11 +23,11 @@ const styles = StyleSheet.create({
   title: {
     color: 'white',
     fontSize: 20,
-    marginLeft: -10,
+    marginLeft: -20,
   },
   plusIcon: {
     color: 'white',
-    fontSize: 20,
+    fontSize: 24,
   },
 });
 

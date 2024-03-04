@@ -35,16 +35,19 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'black',
     padding: 10,
+    marginLeft: -10,
   },
   rightContainer: {
     flex: 1,
     backgroundColor: 'black',
     padding: 10,
-    alignItems: 'center',
+    alignItems: 'left',
+    marginLeft: -30,
+    marginTop: 35,
   },
   cityName: {
     color: 'white',
-    fontSize: 20,
+    fontSize: 18,
   },
   cityInfo: {
     color: 'white',
@@ -52,16 +55,15 @@ const styles = StyleSheet.create({
   },
   temperature: {
     color: 'white',
-    fontSize: 24,
+    fontSize: 60,
   },
   humidityContainer: {
     flexDirection: 'row',
     alignItems: 'center',
   },
   humidityIcon: {
-    width: 20,
-    height: 20,
-    marginRight: 5,
+    width: 25,
+    height: 25,
   },
   humidityValue: {
     color: 'white',
@@ -71,6 +73,7 @@ const styles = StyleSheet.create({
     width: 50,
     height: 50,
     marginBottom: 10,
+    marginLeft: 30,
   },
   cityConditionDescription: {
     color: 'white',

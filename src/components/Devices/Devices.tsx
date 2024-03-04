@@ -21,12 +21,12 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingVertical: 10,
     backgroundColor: 'black',
-    marginBottom: 20,
+    marginBottom: 15,
   },
   title: {
     color: 'white',
     fontSize: 20,
-    marginLeft: -10,
+    marginLeft: -20,
   },
   iconsContainer: {
     flexDirection: 'row',
@@ -34,12 +34,12 @@ const styles = StyleSheet.create({
   },
   plusIcon: {
     color: 'white',
-    fontSize: 20,
+    fontSize: 24,
   },
   gearIcon: {
     width: 20,
     height: 20,
-    marginRight: 10,
+    marginRight: 20,
   },
 });
 
