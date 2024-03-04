@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
   cloudIcon: {
     width: 50,
     height: 50,
-    marginBottom: 10, // Adjust as needed
+    marginBottom: 10,
   },
   cityConditionDescription: {
     color: 'white',

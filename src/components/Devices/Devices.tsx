@@ -1,22 +1,44 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Image } from 'react-native';
 
 const Devices = () => {
   return (
-    <View style={[styles.container, { backgroundColor: 'yellow' }]}>
-      <Text style={styles.title}>This is Devices</Text>
+    <View style={styles.container}>
+      <Text style={styles.title}>Favorite Devices</Text>
+      <View style={styles.iconsContainer}>
+        <Image source={require('../../../assets/gear-icon.png')} style={styles.gearIcon} />
+        <Text style={styles.plusIcon}>+</Text>
+      </View>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    padding: 20,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    backgroundColor: 'black',
   },
   title: {
-    color: 'black',
-    fontSize: 24,
-    fontWeight: 'bold',
+    color: 'white',
+    fontSize: 20,
+    marginLeft: -10,
+  },
+  iconsContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  plusIcon: {
+    color: 'white',
+    fontSize: 20,
+  },
+  gearIcon: {
+    width: 20,
+    height: 20,
+    marginRight: 20,
   },
 });
 
