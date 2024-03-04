@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
   gearIcon: {
     width: 20,
     height: 20,
-    marginRight: 20,
+    marginRight: 10,
   },
 });
 
