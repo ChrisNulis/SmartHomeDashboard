@@ -4,8 +4,8 @@ import Header from './src/components/Header/Header';
 import Weather from './src/components/Weather/Weather';
 import Scenes from './src/components/Scenes/Scenes';
 import Devices from './src/components/Devices/Devices';
+import Cards from './src/components/Cards/Cards';
 import { devices } from './src/dataMockUp';
-
 
 const App = () => {
   return (
@@ -15,6 +15,7 @@ const App = () => {
         <Weather />
         <Scenes />
         <Devices />
+        <Cards devices={devices} />
       </View>
     </View>
   );
